@@ -20,9 +20,10 @@ let geocodeAddress = ( address, callback ) => {
 			callback(null, {
 				address: result.formatted_address,
 				lat: result.geometry.location.lat,
-				lng: result.geometry.location.lon
+				lng: result.geometry.location.lng
 			})
 			console.log( result.geometry.location );
+			//https://api.darksky.net/forecast/e2481e446b2395eac32f9659e5b54f1d/37.8267,-122.4233
 			//console.log( JSON.stringify(response, undefined, 2) );
 		}
 		
